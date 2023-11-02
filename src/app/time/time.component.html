@@ -1,0 +1,17 @@
+<img id="avocado" src="https://i.pinimg.com/originals/12/8e/b5/128eb51942f2bd18d98ee85bb144d4f3.png"/>
+<p class="timer" [innerText]="theMin"></p>
+<p class="timer">:</p>
+<p class="timer" [innerText]="theSec"></p>
+
+<input [(ngModel)]="theMin" class="in" type="range" min="0" max="60"/>
+<input [(ngModel)]="theSec" class="in" type="hidden"/>
+<br>
+<button (click)="startTimer()" class="btn">
+    <ion-icon name="play"></ion-icon>
+</button>
+<button (click)="stopTimer()" class="btn">
+    <ion-icon name="pause"></ion-icon>
+</button>
+<button (click)="endTimer()" class="btn">
+    <ion-icon name="reload"></ion-icon>
+</button>
